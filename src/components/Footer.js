@@ -1,60 +1,44 @@
 import React from 'react'
-import logo_2 from '../assets/logo_2.png';
+import telegram from '../assets/telegram.png';
+import discord from '../assets/discord.png';
+import twitter from '../assets/twitter.png';
 
 
 export default function Footer() {
   return (
-    <footer className='container text-white-100 mx-auto lg:px-20 px-5'>
-      <div className="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 items-center gap-16 font-poppins py-8">
-        <div className="md:col-span-3 col-span-1">
-          <a href="/" className="logo">
-            <img src={logo_2} alt="Logo" />
-          </a>
-          <p className='py-5 leading-loose'>Book your services in minute using your own<br></br>
-            crypto wallet, get full Control for much longer.</p>
+    <footer className='text-white-100 bg-blue-200 md:px-20 px-5'>
+      <div className="container font-poppins mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-5 justify-between gap-24 py-12">
 
-          {/* <div className="flex gap-4">
+          <div className="md:col-span-3 col-span-1">
+            <h3 className='text-3xl font-bold uppercase pb-6'>Disclaimer</h3>
+            <p className=''>It is not intended to create or in any way put into effect contractual relationship through the information contained in this whitepaper. This whitepaper is primarily designed to provide relevant information to potential holders so that they can comprehensively analyze the project and make an informed decision. Statements, estimates and financial information in this lite paper incorporate and consider certain known and unknown risk factors, which could affect estimated results in fact or influence them substantially, factually and significantly from those featured in forward looking statements. </p>
+          </div>
 
-            <div className="p-1 bg-white-100 rounded-full">
-              <i class="fa fa-twitter fa-2x text-black-100 hover:text-white-100 hover:bg-seagreen-200" aria-hidden="true"></i>
+          <div className="col-span-1">
+            <h3 className='text-3xl font-bold uppercase pb-6'>menu</h3>
+            <ul>
+              <li className='pb-5'>Home</li>
+              <li className='pb-5'>Tokenomics</li>
+              <li className='pb-5'>Roadmap</li>
+              <li>Market Plan</li>
+            </ul>
+          </div>
+
+          <div className="col-span-1">
+            <h3 className='text-3xl font-bold uppercase pb-6'>connect</h3>
+            <div className="flex gap-4">
+            <img src={telegram} alt="" />
+            <img src={discord} alt="" />
+            <img src={twitter} alt="" />
+
             </div>
-            <div className="p-1 bg-white-100 rounded-full">
-              <i className="fa fa-telegram fa-2x text-black-100 hover:text-white-100 hover:bg-seagreen-200" aria-hidden="true"></i>
-            </div>
-          </div> */}
+          </div>
         </div>
-        <div className="col-span-1">
-          <h3 className='text-lg font-semibold pb-4'>Company</h3>
-          <ul>
-            <li className='pb-3'>About</li>
-            <li className='pb-3'>Careers</li>
-            <li className='pb-3'>Logistic</li>
-            <li>Privacy & Policy</li>
-          </ul>
-        </div>
-        <div className="col-span-1">
-          <h3 className='text-lg font-semibold pb-4'>Contact</h3>
-          <ul>
-            <li className='pb-3'>Help/FAQ</li>
-            <li className='pb-3'>Press</li>
-            <li className='pb-3'>Affilates</li>
-          </ul>
-        </div>
-        <div className="col-span-1">
-          <h3 className='text-lg font-semibold pb-4'>More</h3>
-          <ul>
-            <li className='pb-3'>Press Centre</li>
-            <li className='pb-3'>Our Blog</li>
-            <li className='pb-3'>Low fare tips</li>
-          </ul>
-        </div>
-      </div>
 
-      <hr />
-
-      <div className="flex justify-between items-center py-5 px-2">
-        <p>Copyright, Rana Muneeb Asad - Ravi Inc 2022. All rights reserved.</p>
-        <a href="/">Terms & Conditions</a>
+        <div className="text-center py-8 px-2">
+          <p>Copyright, Rana Muneeb Asad - Ravi Inc 2022. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   )

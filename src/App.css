@@ -1,14 +1,28 @@
-.bg-img{
-  background-image: url(../src/assets/box.png);
+.bg-top {
+  background-image: linear-gradient(black, black), url(../src/assets/bg_top.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: saturation;
 }
 
+.bg-side {
+  background-image: url(../src/assets/side.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #071058;
+  mix-blend-mode: screen;
+}
+
+.bg-purple{
+  background: linear-gradient(126.21deg, #0088FF 0%, #0F939E 14.24%, #0367DD 49.56%, #0088FF 93.2%);
+}
 
 .slick-slide {
   padding: 20px;
 }
+
 .slick-list {
   padding: -20px;
 }
