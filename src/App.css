@@ -30,10 +30,6 @@
   letter-spacing: 0.05em;
 }
 
-.h-150 {
-  height: 150vh;
-}
-
 #pot {
   position: absolute;
   -webkit-animation: linear infinite;

@@ -27,6 +27,9 @@ module.exports = {
     fontFamily: {
       'kanit': ["'Kanit', sans-serif;"],
       'minecraft': ["'minecraft', sans-serif;"],
+    },
+    height: {
+      '150': '150vh',
     }
   },
   plugins: [],
