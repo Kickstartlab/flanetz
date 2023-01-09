@@ -15,6 +15,8 @@ import one from '../assets/one.png';
 import two from '../assets/two.png';
 import three from '../assets/three.png';
 import four from '../assets/four.png';
+import btn from '../assets/btn.png';
+import btn_1 from '../assets/btn_1.png';
 
 
 
@@ -42,11 +44,17 @@ export default function Home() {
                         </p>
 
                         <div className="py-8 flex justify-center text-white-100 gap-16 font-minecraft">
-                            <button className='bg-red-50 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                            {/* <button className='bg-red-50 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
                                 Lorem
                             </button>
                             <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
                                 Lorem
+                            </button> */}
+                            <button>
+                                <img src={btn} alt="" />
+                            </button>
+                            <button>
+                                <img src={btn_1} alt="" />
                             </button>
                         </div>
                     </div>
@@ -104,7 +112,7 @@ export default function Home() {
 
             <div className="bg-utility bg-blue-300 text-white-100">
                 <div id='pot' className=' -mt-28' >
-                    <img src={cloud} alt="" className='lg:block hidden'/>
+                    <img src={cloud} alt="" className='lg:block hidden' />
                 </div>
 
                 <div className="md:px-20 px-5 py-16 container">
