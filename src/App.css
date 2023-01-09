@@ -38,7 +38,7 @@
   position: absolute;
   -webkit-animation: linear infinite;
   -webkit-animation-name: run;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 12s;
 }
 
 @-webkit-keyframes run {
@@ -54,10 +54,10 @@
     left: calc(100% - 100px);
     -webkit-transform: rotateY(180deg);
   }
-
+/* 
   98% {
     -webkit-transform: rotateY(180deg);
-  }
+  } */
 
   100% {
     left: 0;
