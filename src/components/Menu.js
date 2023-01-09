@@ -16,7 +16,7 @@ export default function Menu() {
 
         <div className="nav font-minecraft">
           <ul className="text-lg flex justify-center gap-8 items-center">
-            <li><a href="/" className="text-white-100 uppercase">buy</a></li>
+            <li><a href="/" className="text-white-100 hover:border-b-2 uppercase">buy</a></li>
             <li><a href="/" className="text-white-100  hover:border-b-2 uppercase">about</a></li>
             <li><a href="/" className="text-white-100  hover:border-b-2 uppercase">community</a></li>
           </ul>
