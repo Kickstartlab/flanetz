@@ -54,10 +54,10 @@
     left: calc(100% - 100px);
     -webkit-transform: rotateY(180deg);
   }
-/* 
+
   98% {
     -webkit-transform: rotateY(180deg);
-  } */
+  }
 
   100% {
     left: 0;
