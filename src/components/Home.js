@@ -1,8 +1,22 @@
 import React from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
-import doge_2 from '../assets/doge_2.png';
-import roadmap from '../assets/roadmap.png';
+import logo from '../assets/logo.png';
+import diamond from '../assets/diamond.png';
+import coin from '../assets/coin.png';
+import utility from '../assets/utility.png';
+import util from '../assets/util.png';
+import rd_top from '../assets/rd-top.png';
+import monkey from '../assets/monkey.png';
+import cart from '../assets/cart.png';
+import hand from '../assets/hand.gif';
+import cloud from '../assets/cloud.png';
+import one from '../assets/one.png';
+import two from '../assets/two.png';
+import three from '../assets/three.png';
+import four from '../assets/four.png';
+
+
 
 
 export default function Home() {
@@ -12,100 +26,236 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="bg-top">
+            <div className="md:px-20 px-5 bg-top">
+                <div className='container mx-auto'>
+                    <Menu />
 
-                <div className="md:px-20 px-5">
-                    <div className='container mx-auto'>
-                        <Menu />
+                    <div className="lg:mt-0 mt-8">
 
-                        <div className="lg:flex block justify-between items-center">
-                            <div className="text-white-100">
-                                <h2 className='md:text-6xl text-3xl font-bold'>
-                                    The Year 2023  here
-                                </h2>
+                        <div className="flex mx-auto md:my-0 my-20 justify-center">
+                            <img src={logo} alt="" />
+                        </div>
 
-                                <p className='pt-3 py-8 leading-loose text-lg'><span className='text-yellow-50'>BSC Network </span>You Do Not Know
-                                    What Is <span className='text-yellow-50'>Coming</span>!</p>
+                        <p className="font-minecraft md:text-3xl text-xl font-semibold text-white-100 text-center">
+                            Lorem ipsum dolor sit amet,<br></br>
+                            consectetur adipiscing elit
+                        </p>
 
-                                <div className="flex gap-x-6 font-poppins">
-                                    <a href="/">
-                                        <button className="border-2 border-yellow-50 font-poppins text-white-50 bg-yellow-50 py-2 px-8 rounded-sm font-semibold">
-                                            About us
-                                        </button>
-                                    </a>
-                                    <a href="/">
-                                        <button className="border-2 text-yellow-50 font-poppins hover:text-white-100 border-yellow-50 hover:bg-yellow-50 py-2 px-8 rounded-sm font-semibold">
-                                            Telegram
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
+                        <div className="py-8 flex justify-center">
+                            <button>
 
-                            <div className="img md:mt-0 mt-5">
-                                <img src={doge_2} alt="Logo" />
-                            </div>
+                            </button>
                         </div>
                     </div>
 
+
                 </div>
 
-            </div >
+            </div>
 
             {/* About us section */}
 
-            <div className="bg-side text-white-100 ">
+            <div className="bg-mon text-white-100 h-150">
                 <div className="md:px-20 px-5 py-12 container">
 
-                    <h3 className="text-2xl font-bold">
-                        About Us
-                    </h3>
-                    <h2 className='pt-3 py-8 uppercase text-5xl font-bold'><span className='text-yellow-50'>2023</span> is here
-                    </h2>
-                    <p className='pb-6'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                    <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide">
+                        Lorem ipsum dolor sit amet,<br></br>
+                        consectetur adipiscing elit
                     </p>
-                    <p>
-                        Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.
-                    </p>
+
+                    <div className="py-8 flex gap-16 font-minecraft">
+                        <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                            Lorem
+                        </button>
+                        <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                            Lorem
+                        </button>
+                    </div>
+
                 </div>
             </div>
 
-            {/* Roadmap section */}
+            {/* tokenomics section */}
 
-            <div className="bg-black-100 text-white-100">
+            <div className="bg-liberty text-white-100 h-150">
                 <div className="md:px-20 px-5 py-12 container">
 
-                    <h2 className='pt-3 py-8 uppercase text-5xl font-bold text-center'>Road<span className='text-yellow-50'> map</span>
-                    </h2>
+                    <div className="lg:w-1/2 w-full py-8">
+                        <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide">
+                            Lorem ipsum dolor sit amet,<br></br>
+                            consectetur adipiscing elit
+                        </p>
+                        <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
 
-                    <div className="pt-8">
-                        <img src={roadmap} alt="Logo" />
+                        <img src={diamond} alt="diamond" />
+
+                        <button className='bg-red-50 mt-5 uppercase rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                            Lorem
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* utilities section */}
+
+            <div className="bg-utility text-white-100">
+                <div id='pot' className=' -mt-28' >
+                    <img src={cloud} alt="" />
+                </div>
+
+                <div className="md:px-20 px-5 py-16 container">
+
+                    <img src={utility} alt="" className='mb-8 lg:w-1/2 w-full flex mx-auto' />
+
+                    <div class="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24">
+
+                        <div class="flex flex-col gap-32">
+
+                            <div>
+                                <img src={coin} alt="coin" />
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                    Lorem
+                                </h4>
+                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <img src={util} alt="util" />
+                            </div>
+
+                            <div>
+                                <img src={coin} alt="coin" />
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                    Lorem
+                                </h4>
+                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <img src={util} alt="util" />
+                            </div>
+
+                        </div>
+                        <div class="flex flex-col py-16 lg:py-0">
+
+                            <div>
+                                <img src={coin} alt="coin" />
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                    Lorem
+                                </h4>
+                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <img src={util} alt="util" />
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-col gap-16">
+
+                            <div>
+                                <img src={coin} alt="coin" />
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                    Lorem
+                                </h4>
+                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <img src={util} alt="util" />
+                            </div>
+
+                            <div>
+                                <img src={coin} alt="coin" />
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                    Lorem
+                                </h4>
+                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <img src={util} alt="util" />
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            {/* Marketing plan section */}
+            {/* roadmap section */}
 
-            <div className="bg-side text-white-100 ">
+            <div className="bg-map text-white-100 ">
                 <div className="md:px-20 px-5 py-12 container">
 
-                    <h2 className='pt-3 py-8 uppercase text-5xl font-bold text-center'>marketing<span className='text-yellow-50'> plan</span>
-                    </h2>
+                    <div className="lg:flex block items-center justify-between">
 
-                    <div className="grid grid-cols-3 grid-rows-3 gap-6 items-center pt-5 justify-items-center">
-                        <div className="bg-purple py-5 px-3 rounded-xl">
-                            <div>
-                                <i class="fa fa-telegram fa-2x text-white" aria-hidden="true"></i>
+                        <div>
+                            <img src={rd_top} alt="roadmap" />
+                            <h1 className='font-minecraft uppercase pt-5 md:text-5xl text-xl font-semibold text-white-100 tracking-wide'>roadmap</h1>
+                        </div>
+
+                        <div>
+                            <img src={monkey} alt="roadmap" className='ml-10' />
+                            <img src={util} alt="roadmap" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {/* how to buy section */}
+
+            <div className="bg-blue-300 text-white-100 ">
+                <div className="md:px-20 px-5 py-16 container">
+
+                    <div className="flex gap-4 justify-center items-center">
+                        <h1 className='font-minecraft uppercase pt-5 md:text-5xl text-xl font-semibold text-white-100 tracking-wide'>HOW TO BUY</h1>
+                        <img src={cart} alt="cart" className='w-20' />
+                    </div>
+
+                    <div className="lg:flex block justify-between items-center gap-14 my-16">
+
+                        <div className='flex flex-col gap-14'>
+                            <div className="flex gap-4 justify-center items-center">
+                                <img src={one} alt="cart" className='w-20' />
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div className="flex gap-4 justify-center items-center">
+                                <img src={two} alt="cart" className='w-20' />
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
+
+                        <div className='flex flex-col gap-14'>
+                            <div className="flex gap-4 justify-center items-center">
+                                <img src={three} alt="cart" className='w-20' />
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <div className="flex gap-4 justify-center items-center">
+                                <img src={four} alt="cart" className='w-20' />
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button className='bg-red-50 mt-5 uppercase rounded-2xl px-6 py-2 text-2xl font-semibold tracking-wider font-minecraft flex mx-auto'>
+                        buy
+                    </button>
+
+                    <img src={hand} alt="" className='w-16 flex mx-auto' />
+
+                    <div className="lg:flex block gap-4 justify-between items-center mt-8">
+                        <div>
+                            <h4 className='font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide'>ArE TOGETHER STRONG</h4>
+
+                            <p className='font-minecraft text-lg text-white-100 tracking-wide my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div>
+                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-xl font-minecraft font-semibold tracking-wide uppercase'>
+                                community
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
-
-
-
-
             <Footer />
         </div>
 

@@ -4,11 +4,14 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      yellow: {
-        "50": "#FAAB00",
+      red: {
+        "50": "#D74564",
       },
       blue: {
-        "200": "#01082D",
+        "100": "#15BFFD",
+        "200": "#030750",
+        "300": "#131E39",
+
       },
       black: {
         "100": "#161616"
@@ -17,14 +20,13 @@ module.exports = {
         "100": "#fff",
         "50": "#f5f5f5"
       },
-      pink: {
-        "100": "#FFE7DB",
-        "200": "#FA7436"
+      green: {
+        "50": "#4AA72E"
       },
     },
     fontFamily: {
-      'volkhov': ["'Volkhov', serif;"],
-      'poppins': ["'Poppins', sans-serif;"],
+      'kanit': ["'Kanit', sans-serif;"],
+      'minecraft': ["'minecraft', sans-serif;"],
     }
   },
   plugins: [],

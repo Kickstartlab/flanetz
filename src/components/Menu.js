@@ -9,32 +9,31 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="md:flex hidden items-center justify-between font-poppins text-black-100 h-24">
+      <div className="md:flex hidden items-center justify-between font-kanit text-black-100 h-24">
         <a href="/" className="logo">
-          <h2 className="text-4xl font-bold text-yellow-50">DOGE 2023</h2>
+          <h2 className="text-4xl font-bold text-white-100">Flanetz</h2>
         </a>
 
-        <div className="nav">
+        <div className="nav font-minecraft">
           <ul className="text-lg flex justify-center gap-8 items-center">
-            <li><a href="index.html" className="text-yellow-50 border-b-2">Home</a></li>
-            <li><a href="about.html" className="text-white-100  hover:text-yellow-50 hover:border-b-2">Tokenomics</a></li>
-            <li><a href="services.html" className="text-white-100  hover:text-yellow-50 hover:border-b-2">Roadmap</a></li>
-            <li><a href="services.html" className="text-white-100  hover:text-yellow-50 hover:border-b-2">Marketing Plan</a></li>
+            <li><a href="index.html" className="text-white-100 uppercase">buy</a></li>
+            <li><a href="about.html" className="text-white-100  hover:border-b-2 uppercase">about</a></li>
+            <li><a href="services.html" className="text-white-100  hover:border-b-2 uppercase">community</a></li>
           </ul>
         </div>
 
         <div className="">
-          <a href="contact.html">
+          {/* <a href="contact.html">
             <button className="bg-seagreen-100 hover:bg-yellow-50 border-2 border-yellow-50 hover:text-seagreen-100 text-white-100 py-2 px-8 rounded-sm font-semibold">
               Get   Whitepaper
             </button>
-          </a>
+          </a> */}
         </div>
       </div>
 
       <div className="md:hidden flex items-center justify-between pt-5 font-nutino-sans">
         <a href="/" className="logo">
-          <h2 className="text-4xl font-bold text-yellow-50 font-poppins">DOGE 2023</h2>
+          <h2 className="text-4xl font-bold text-yellow-50 font-kanit">Flanetz</h2>
         </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
@@ -44,11 +43,11 @@ export default function Menu() {
         </button>
       </div>
 
-      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-poppins font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
+      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-kanit font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
             <a href="/" className="logo">
-              <h2 className="text-4xl font-bold text-yellow-50">DOGE 2023</h2>
+              <h2 className="text-4xl font-bold text-yellow-50">Flanetz</h2>
             </a>
           </div>
         </div>

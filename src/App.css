@@ -1,28 +1,66 @@
 .bg-top {
-  background-image: linear-gradient(black, black), url(../src/assets/bg_top.png);
+  background-image: url(./assets/bg_top.png);
+}
+
+.bg-mon {
+  background-image: url(./assets/bg_mon.png);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: saturation;
 }
 
-.bg-side {
-  background-image: url(../src/assets/side.png);
+.bg-liberty {
+  background-image: url(./assets/bg-liberty.png);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #071058;
-  mix-blend-mode: screen;
 }
 
-.bg-purple{
-  background: linear-gradient(126.21deg, #0088FF 0%, #0F939E 14.24%, #0367DD 49.56%, #0088FF 93.2%);
+.bg-utility {
+  background-image: url(./assets/bg-util.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.slick-slide {
-  padding: 20px;
+.bg-map {
+  background-image: url(./assets/bg-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.slick-list {
-  padding: -20px;
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.h-150 {
+  height: 150vh;
+}
+
+#pot {
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+
+  48% {
+    -webkit-transform: rotateY(0deg);
+  }
+
+  50% {
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+  }
+
+  98% {
+    -webkit-transform: rotateY(180deg);
+  }
+
+  100% {
+    left: 0;
+    -webkit-transform: rotateY(0deg);
+  }
 }
