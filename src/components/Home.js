@@ -99,7 +99,7 @@ export default function Home() {
 
             {/* utilities section */}
 
-            <div className="bg-utility text-white-100">
+            <div className="bg-utility bg-blue-300 text-white-100">
                 <div id='pot' className=' -mt-28' >
                     <img src={cloud} alt="" />
                 </div>
