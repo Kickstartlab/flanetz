@@ -113,7 +113,7 @@ export default function Home() {
 
             <div className="bg-utility bg-blue-300 text-white-100">
                 <div id='pot' className=' -mt-28' >
-                    <img src={cloud} alt="" className='lg:w-1/3 w-full' />
+                    <img src={cloud} alt="" className='lg:w-full w-1/3' />
                 </div>
 
                 <div className="md:px-20 px-5 py-16 container mx-auto">
