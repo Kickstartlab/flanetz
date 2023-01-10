@@ -207,7 +207,7 @@ export default function Home() {
                             <h1 className='font-minecraft uppercase py-5 md:text-5xl text-3xl font-semibold text-white-100 tracking-wide'>roadmap</h1>
                         </div>
 
-                        <div>
+                        <div className='lg:my-0 my-12'>
                             <img src={monkey} alt="monkey" className='ml-10 bounce-out-down' />
                             <img src={util} alt="roadmap" />
                         </div>
@@ -336,7 +336,7 @@ export default function Home() {
                         </div>
 
                         <div className='flex flex-col gap-14'>
-                            <div className="flex gap-4 justify-center items-center">
+                            <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
                                 <img src={three} alt="cart" className='w-20' />
                                 <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
