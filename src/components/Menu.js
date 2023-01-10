@@ -9,7 +9,7 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="md:flex hidden items-center justify-between font-kanit text-black-100 h-24">
+      <div className="md:flex hidden items-center justify-between font-kanit py-3 h-28">
         <a href="/" className="logo">
           <h2 className="text-4xl font-bold text-white-100">Flanetz</h2>
         </a>

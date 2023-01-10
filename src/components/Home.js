@@ -17,6 +17,8 @@ import three from '../assets/three.png';
 import four from '../assets/four.png';
 import btn from '../assets/btn.png';
 import btn_1 from '../assets/btn_1.png';
+import statue from '../assets/statue.png';
+import heart from '../assets/heart.png';
 
 
 
@@ -35,7 +37,7 @@ export default function Home() {
                     <div className="lg:mt-0 mt-8">
 
                         <div className="flex mx-auto md:my-0 my-20 justify-center">
-                            <img src={logo} alt="" />
+                            <img src={logo} alt="" className='logo-2'/>
                         </div>
 
                         <p className="font-minecraft md:text-3xl text-xl font-semibold text-white-100 text-center">
@@ -44,12 +46,6 @@ export default function Home() {
                         </p>
 
                         <div className="py-8 flex justify-center text-white-100 gap-16 font-minecraft">
-                            {/* <button className='bg-red-50 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                                Lorem
-                            </button>
-                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                                Lorem
-                            </button> */}
                             <button>
                                 <img src={btn} alt="" />
                             </button>
@@ -67,7 +63,7 @@ export default function Home() {
             {/* About us section */}
 
             <div className="bg-mon text-white-100 lg:h-150 h-screen">
-                <div className="md:px-20 px-5 py-12 container">
+                <div className="md:px-20 px-5 py-12 container mx-auto">
 
                     <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide">
                         Lorem ipsum dolor sit amet,<br></br>
@@ -88,21 +84,36 @@ export default function Home() {
 
             {/* tokenomics section */}
 
-            <div className="bg-liberty text-white-100 lg:h-150 h-screen">
-                <div className="md:px-20 px-5 py-12 container">
+            <div className="bg-liberty text-white-100">
+                <div className="md:pl-20 px-5">
 
-                    <div className="lg:w-1/2 w-full py-8">
-                        <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide">
-                            Lorem ipsum dolor sit amet,<br></br>
-                            consectetur adipiscing elit
-                        </p>
-                        <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
+                    <div className="flex justify-between">
 
-                        <img src={diamond} alt="diamond" />
+                        <div className="lg:w-5/12 w-full py-12">
+                            <p className="font-minecraft pt-5 md:text-4xl text-xl font-semibold text-white-100 tracking-wide">
+                                Lorem ipsum dolor sit amet,
+                            </p>
+                            <p className='py-5 font-kanit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
 
-                        <button className='bg-red-50 mt-5 uppercase rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                            Lorem
-                        </button>
+                            <img src={diamond} alt="diamond" />
+
+                            <button className='bg-red-50 mt-5 uppercase rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                                Lorem
+                            </button>
+                        </div>
+
+                        <div className="lg:w-2/12 w-full lg:block hidden">
+
+
+                        </div>
+
+                        <div className="lg:w-6/12 w-full lg:block hidden">
+
+                            <img src={cloud} alt="cloud" className=' absolute' />
+                            <img src={heart} alt="heart" className='absolute mt-20 -ml-24 heart' />
+                            <img src={statue} alt="liberty" className=''/>
+
+                        </div>
                     </div>
 
                 </div>
@@ -115,7 +126,7 @@ export default function Home() {
                     <img src={cloud} alt="" className='lg:block hidden' />
                 </div>
 
-                <div className="md:px-20 px-5 py-16 container">
+                <div className="md:px-20 px-5 py-16 container mx-auto">
 
                     <img src={utility} alt="" className='mb-8 lg:w-1/2 w-full flex mx-auto' />
 
@@ -187,7 +198,7 @@ export default function Home() {
             {/* roadmap section */}
 
             <div className="bg-map bg-blue-300 text-white-100 ">
-                <div className="md:px-20 px-5 py-12 container">
+                <div className="md:px-20 px-5 py-12 container mx-auto">
 
                     <div className="lg:flex block items-center justify-between">
 
@@ -197,7 +208,7 @@ export default function Home() {
                         </div>
 
                         <div>
-                            <img src={monkey} alt="roadmap" className='ml-10' />
+                            <img src={monkey} alt="monkey" className='ml-10 bounce-out-down' />
                             <img src={util} alt="roadmap" />
                         </div>
 
@@ -303,7 +314,7 @@ export default function Home() {
             {/* how to buy section */}
 
             <div className="bg-blue-300 text-white-100 ">
-                <div className="md:px-20 px-5 py-16 container">
+                <div className="md:px-20 px-5 py-16 container mx-auto">
 
                     <div className="flex gap-4 justify-center items-center">
                         <h1 className='font-minecraft uppercase pt-5 md:text-5xl text-xl font-semibold text-white-100 tracking-wide'>HOW TO BUY</h1>

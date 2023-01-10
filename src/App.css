@@ -9,8 +9,9 @@
 }
 
 .bg-liberty {
-  background-image: url(./assets/bg-liberty.png);
+  background-image: url(./assets/liberty.png);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -46,10 +47,10 @@
     -webkit-transform: rotateY(0deg);
   }
 
-  50% {
+  /* 50% {
     left: calc(100% - 100px);
     -webkit-transform: rotateY(180deg);
-  }
+  } */
 
   98% {
     -webkit-transform: rotateY(180deg);
@@ -58,5 +59,68 @@
   100% {
     left: 0;
     -webkit-transform: rotateY(0deg);
+  }
+}
+
+.logo-2 {
+  box-shadow: 0 0 0 0 #EDEF17;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #EDEF17;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
+}
+
+.heart {
+  animation: heart 0.7s infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0.85);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+  }
+
+  100% {
+    transform: scale(0.85);
+    box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
+}
+
+.bounce-out-down {
+  animation: bounce-out-down 2s ease infinite;
+}
+
+@keyframes bounce-out-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
   }
 }
