@@ -51,10 +51,16 @@ export default function Home() {
                 <div className="md:px-20 px-5 py-12 container mx-auto">
 
                     <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold lg:w-1/2 w-full text-white-100 tracking-wide">
-                        Have to believe that crypto will return to its prime. FLANETZ, a bsc utility token created and followed by an amazing community
+                        A bsc token that brought crypto back to its prime
                     </p>
 
-                    <div className="py-8 flex gap-16 font-minecraft">
+                    <div className="py-8 flex gap-14 font-minecraft">
+
+                        <a href="https://t.me/flanetz_chat">
+                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                                Community
+                            </button>
+                        </a>
 
                         <a href="https://poocoin.app/tokens/0x27044cfe4d9e4d799c5ae3778d2215110465df00">
                             <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
@@ -62,11 +68,6 @@ export default function Home() {
                             </button>
                         </a>
 
-                        <a href="https://t.me/flanetz_chat">
-                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                                Telegram
-                            </button>
-                        </a>
                     </div>
 
                 </div>
