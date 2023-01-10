@@ -80,16 +80,18 @@ export default function Home() {
                     <div className="flex justify-between">
 
                         <div className="lg:w-5/12 w-full py-12">
-                            <p className="font-minecraft pt-5 md:text-4xl text-xl font-semibold text-white-100 tracking-wide">
-                                Lorem ipsum dolor sit amet,
+
+                            <p className="font-minecraft py-5 md:text-2xl text-xl font-semibold text-white-100 tracking-wide">
+                                Have to believe that crypto will return to its prime. FLANETZ, a bsc utility token created and followed by an amazing community
                             </p>
-                            <p className='py-5 font-kanit'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.</p>
 
                             <img src={diamond} alt="diamond" />
 
-                            <button className='bg-red-50 mt-5 uppercase rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                                Lorem
-                            </button>
+                            <a href="https://poocoin.app/tokens/0x27044cfe4d9e4d799c5ae3778d2215110465df00">
+                                <button className='bg-red-50 mt-5 uppercase rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                                    chart
+                                </button>
+                            </a>
                         </div>
 
                         <div className="lg:w-2/12 w-full lg:block hidden">
@@ -112,7 +114,7 @@ export default function Home() {
             {/* utilities section */}
 
             <div className="bg-utility bg-blue-300 text-white-100">
-                <div id='pot' className=' -mt-28' >
+                <div id='pot' className='lg:-mt-28 -mt-8' >
                     <img src={cloud} alt="" className='lg:w-full w-1/3' />
                 </div>
 
