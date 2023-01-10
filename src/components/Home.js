@@ -75,11 +75,11 @@ export default function Home() {
             {/* tokenomics section */}
 
             <div className="bg-liberty text-white-100">
-                <div className="md:pl-20 px-5">
+                <div className="md:pl-20 px-5 bg-liberty">
 
                     <div className="flex justify-between">
 
-                        <div className="lg:w-5/12 w-full py-12">
+                        <div className="lg:w-5/12 w-full py-12 bg-heart">
 
                             <p className="font-minecraft py-5 md:text-2xl text-xl font-semibold text-white-100 tracking-wide">
                                 Have to believe that crypto will return to its prime. FLANETZ, a bsc utility token created and followed by an amazing community
@@ -99,7 +99,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="lg:w-6/12 w-full">
+                        <div className="lg:w-6/12 w-full lg:block hidden">
 
                             <img src={cloud} alt="cloud" className=' absolute' />
                             <img src={heart} alt="heart" className='absolute mt-20 -ml-24 heart' />
