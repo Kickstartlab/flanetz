@@ -15,8 +15,6 @@ import one from '../assets/one.png';
 import two from '../assets/two.png';
 import three from '../assets/three.png';
 import four from '../assets/four.png';
-import btn from '../assets/btn.png';
-import btn_1 from '../assets/btn_1.png';
 import statue from '../assets/statue.png';
 import heart from '../assets/heart.png';
 
@@ -31,28 +29,15 @@ export default function Home() {
             {/* top section */}
 
             <div className="md:px-20 px-5 bg-top">
-                <div className='container mx-auto'>
+                <div className='container mx-auto h-screen'>
                     <Menu />
 
                     <div className="lg:mt-0 mt-8">
 
-                        <div className="flex mx-auto md:my-0 my-20 justify-center">
-                            <img src={logo} alt="" className='logo-2'/>
+                        <div className="flex mx-auto md:py-20 py-5 justify-center">
+                            <img src={logo} alt="" className='logo-2' />
                         </div>
 
-                        <p className="font-minecraft md:text-3xl text-xl font-semibold text-white-100 text-center">
-                            Lorem ipsum dolor sit amet,<br></br>
-                            consectetur adipiscing elit
-                        </p>
-
-                        <div className="py-8 flex justify-center text-white-100 gap-16 font-minecraft">
-                            <button>
-                                <img src={btn} alt="" />
-                            </button>
-                            <button>
-                                <img src={btn_1} alt="" />
-                            </button>
-                        </div>
                     </div>
 
 
@@ -65,18 +50,23 @@ export default function Home() {
             <div className="bg-mon text-white-100 lg:h-150 h-screen">
                 <div className="md:px-20 px-5 py-12 container mx-auto">
 
-                    <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide">
-                        Lorem ipsum dolor sit amet,<br></br>
-                        consectetur adipiscing elit
+                    <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold lg:w-1/2 w-full text-white-100 tracking-wide">
+                        Have to believe that crypto will return to its prime. FLANETZ, a bsc utility token created and followed by an amazing community
                     </p>
 
                     <div className="py-8 flex gap-16 font-minecraft">
-                        <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                            Lorem
-                        </button>
-                        <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
-                            Lorem
-                        </button>
+
+                        <a href="https://poocoin.app/tokens/0x27044cfe4d9e4d799c5ae3778d2215110465df00">
+                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                                Chart
+                            </button>
+                        </a>
+
+                        <a href="https://t.me/flanetz_chat">
+                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                                Telegram
+                            </button>
+                        </a>
                     </div>
 
                 </div>
@@ -107,11 +97,11 @@ export default function Home() {
 
                         </div>
 
-                        <div className="lg:w-6/12 w-full lg:block hidden">
+                        <div className="lg:w-6/12 w-full">
 
                             <img src={cloud} alt="cloud" className=' absolute' />
                             <img src={heart} alt="heart" className='absolute mt-20 -ml-24 heart' />
-                            <img src={statue} alt="liberty" className=''/>
+                            <img src={statue} alt="liberty" className='' />
 
                         </div>
                     </div>
@@ -123,7 +113,7 @@ export default function Home() {
 
             <div className="bg-utility bg-blue-300 text-white-100">
                 <div id='pot' className=' -mt-28' >
-                    <img src={cloud} alt="" className='lg:block hidden' />
+                    <img src={cloud} alt="" className='lg:w-1/3 w-full' />
                 </div>
 
                 <div className="md:px-20 px-5 py-16 container mx-auto">
@@ -134,36 +124,35 @@ export default function Home() {
 
                         <div class="flex flex-col gap-32">
 
-                            <div>
+                            <a href='https://www.flanetzstaking.com/'>
                                 <img src={coin} alt="coin" />
                                 <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
                                     Staking
                                 </h4>
                                 <p className='py-5'>140% APY </p>
                                 <img src={util} alt="util" />
-                            </div>
+                            </a>
 
                             <div>
                                 <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
-                                    Lorem
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 pb-5">
+                                    Coming soon
                                 </h4>
-                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+
                                 <img src={util} alt="util" />
                             </div>
 
                         </div>
                         <div class="flex flex-col py-16 lg:py-0">
 
-                            <div>
+                            <a href='https://t.me/GoldguardBot'>
                                 <img src={coin} alt="coin" />
                                 <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
                                     GoldguardBot
                                 </h4>
                                 <p className='py-5'>GoldguardBot is a verification captcha bots, we design it simple so easy to use</p>
                                 <img src={util} alt="util" />
-                            </div>
+                            </a>
 
                         </div>
 
@@ -171,21 +160,19 @@ export default function Home() {
 
                             <div>
                                 <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
-                                    Lorem
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 pb-5">
+                                    Coming soon
                                 </h4>
-                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+
                                 <img src={util} alt="util" />
                             </div>
 
                             <div>
                                 <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
-                                    Lorem
+                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 pb-5">
+                                    Coming soon
                                 </h4>
-                                <p className='py-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
+
                                 <img src={util} alt="util" />
                             </div>
 
@@ -197,7 +184,7 @@ export default function Home() {
 
             {/* roadmap section */}
 
-            <div className="bg-map bg-blue-300 text-white-100 ">
+            <div id="roadmap" className="bg-map bg-blue-300 text-white-100 ">
                 <div className="md:px-20 px-5 py-12 container mx-auto">
 
                     <div className="lg:flex block items-center justify-between">
@@ -326,40 +313,43 @@ export default function Home() {
                         <div className='flex flex-col gap-14'>
                             <div className="flex gap-4 justify-center items-center">
                                 <img src={one} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Download Metamask or Trust Wallet & set your bsc wallet</p>
                             </div>
 
                             <div className="flex gap-4 justify-center items-center">
                                 <img src={two} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Open PancakeSwap and
+                                    Connect your wallet</p>
                             </div>
                         </div>
 
                         <div className='flex flex-col gap-14'>
                             <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
                                 <img src={three} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Add $FLANETZ  contract
+                                    Click settings and set “slippage” to 10%</p>
                             </div>
 
                             <div className="flex gap-4 justify-center items-center">
                                 <img src={four} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Enter the desired amount and swap</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <button className='bg-red-50 mt-5 uppercase rounded-2xl px-6 py-2 text-2xl font-semibold tracking-wider font-minecraft flex mx-auto'>
-                        buy
-                    </button>
-
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x27044cfe4D9E4d799c5aE3778d2215110465Df00">
+                        <button className='bg-red-50 mt-5 uppercase rounded-2xl px-6 py-2 text-2xl font-semibold tracking-wider font-minecraft flex mx-auto'>
+                            buy
+                        </button>
+                    </a>
                     <img src={hand} alt="" className='w-16 flex mx-auto' />
 
                     <div className="lg:flex block gap-4 justify-between items-center mt-8">
                         <div>
                             <h4 className='font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide'>ArE TOGETHER STRONG</h4>
 
-                            <p className='font-minecraft text-lg text-white-100 tracking-wide my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p className='font-minecraft text-lg text-white-100 tracking-wide my-5'>$FLANETZ will change the Binance Smart Chain forever</p>
                         </div>
 
                         <div>

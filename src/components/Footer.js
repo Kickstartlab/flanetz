@@ -20,8 +20,8 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-4 lg:mt-0 mt-5">
-            <img src={discord} alt="discord" className='w-16'/>
-            <img src={twitter} alt="twitter" className='w-16'/>
+           <a href="https://t.me/flanetz_chat"><img src={discord} alt="discord" className='w-16'/></a> 
+            <a href="https://twitter.com/flanetz"><img src={twitter} alt="twitter" className='w-16'/></a>
           </div>
 
         </div>
