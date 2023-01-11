@@ -100,14 +100,6 @@ export default function Home() {
                         <img src={heart} alt="heart" className='absolute w-16 mt-6 heart sm:hidden block' />
 
                         </div>
-
-                        {/* <div className="lg:w-6/12 w-full sm:block hidden">
-
-                            <img src={cloud} alt="cloud" className=' absolute' />
-                            <img src={heart} alt="heart" className='absolute mt-20 -ml-24 heart' />
-                            <img src={statue} alt="liberty" className='' />
-
-                        </div> */}
                     </div>
 
                 </div>
