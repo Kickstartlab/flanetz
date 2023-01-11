@@ -3,7 +3,7 @@
 }
 
 .bg-mon {
-  background-image: url(./assets/bg_mon.png);
+  background-image: url(./assets/bg-mon.png);
   background-position: center;
   background-size: cover;
 }
@@ -13,6 +13,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 150vh;
 }
 
 .bg-utility {
@@ -116,13 +117,22 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 430px) {
 
   .bg-liberty {
     background-image: url(./assets/bg-liberty.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+
+  }
+
+  .bg-mon {
+    background-image: url(./assets/bg-mon-2.png);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
   }
 
   .bg-heart {

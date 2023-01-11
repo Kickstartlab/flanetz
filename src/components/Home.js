@@ -50,20 +50,20 @@ export default function Home() {
             <div className="bg-mon text-white-100 lg:h-150 h-screen">
                 <div className="md:px-20 px-5 py-12 container mx-auto">
 
-                    <p className="font-minecraft pt-5 md:text-3xl text-xl font-semibold lg:w-1/2 w-full text-white-100 tracking-wide">
+                    <p className="font-minecraft pt-5 md:text-3xl text-sm sm:text-left text-center font-semibold lg:w-1/2 w-full text-white-100 tracking-wide">
                         A bsc token that brought crypto back to its prime
                     </p>
 
-                    <div className="py-8 flex gap-14 font-minecraft">
+                    <div className="py-8 flex sm:gap-14 gap-6 font-minecraft justify-center">
 
                         <a href="https://t.me/flanetz_chat">
-                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                            <button className='bg-blue-100 rounded-xl sm:px-6 px-2 py-2 sm:text-lg text-xs lg:font-semibold font-medium tracking-wide'>
                                 Community
                             </button>
                         </a>
 
                         <a href="https://poocoin.app/tokens/0x27044cfe4d9e4d799c5ae3778d2215110465df00">
-                            <button className='bg-blue-100 rounded-xl px-6 py-2 text-lg font-semibold tracking-wide'>
+                            <button className='bg-blue-100 rounded-xl sm:px-6 px-2 py-2 sm:text-lg text-xs lg:font-semibold font-medium tracking-wide'>
                                 Chart
                             </button>
                         </a>
@@ -80,9 +80,9 @@ export default function Home() {
 
                     <div className="flex justify-between">
 
-                        <div className="lg:w-5/12 w-full py-12 bg-heart">
+                        <div className="lg:w-5/12 w-8/12 py-12">
 
-                            <p className="font-minecraft py-5 md:text-2xl text-xl font-semibold text-white-100 tracking-wide">
+                            <p className="font-minecraft py-5 md:text-2xl text-sm font-semibold text-white-100 tracking-wide">
                                 Have to believe that crypto will return to its prime. FLANETZ, a bsc utility token created and followed by an amazing community
                             </p>
 
@@ -95,18 +95,19 @@ export default function Home() {
                             </a>
                         </div>
 
-                        <div className="lg:w-2/12 w-full lg:block hidden">
-
+                        <div className="lg:w-7/12 w-4/12">
+                        <img src={heart} alt="heart" className='absolute mt-5 heart sm:block hidden' />
+                        <img src={heart} alt="heart" className='absolute w-16 mt-6 heart sm:hidden block' />
 
                         </div>
 
-                        <div className="lg:w-6/12 w-full lg:block hidden">
+                        {/* <div className="lg:w-6/12 w-full sm:block hidden">
 
                             <img src={cloud} alt="cloud" className=' absolute' />
                             <img src={heart} alt="heart" className='absolute mt-20 -ml-24 heart' />
                             <img src={statue} alt="liberty" className='' />
 
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>
@@ -123,62 +124,42 @@ export default function Home() {
 
                     <img src={utility} alt="" className='mb-8 lg:w-1/2 w-full flex mx-auto' />
 
-                    <div class="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24">
+                    <div class="lg:grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-24">
 
-                        <div class="flex flex-col gap-32">
+                        <a href='https://t.me/GoldguardBot'>
+                            <img src={coin} alt="coin" />
+                            <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                GoldguardBot
+                            </h4>
+                            <p className='py-5 font-kanit'>GoldguardBot is a verification captcha bots,<br></br> we design it simple so easy to use</p>
+                            <img src={util} alt="util" />
+                        </a>
 
-                            <a href='https://www.flanetzstaking.com/'>
-                                <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
-                                    Staking
-                                </h4>
-                                <p className='py-5'>140% APY </p>
-                                <img src={util} alt="util" />
-                            </a>
+                        <a href='https://www.flanetzstaking.com/'>
+                            <img src={coin} alt="coin" />
+                            <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                Staking
+                            </h4>
+                            <p className='py-5 font-kanit'>Earn more $FLANETZ through staking with 140% APY</p>
+                            <img src={util} alt="util" />
+                        </a>
 
-                            <div>
-                                <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 pb-5">
-                                    Coming soon
-                                </h4>
-
-                                <img src={util} alt="util" />
-                            </div>
-
-                        </div>
-                        <div class="flex flex-col py-16 lg:py-0">
-
-                            <a href='https://t.me/GoldguardBot'>
-                                <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
-                                    GoldguardBot
-                                </h4>
-                                <p className='py-5'>GoldguardBot is a verification captcha bots, we design it simple so easy to use</p>
-                                <img src={util} alt="util" />
-                            </a>
-
+                        <div>
+                            <img src={coin} alt="coin" />
+                            <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                NFT marketplace
+                            </h4>
+                            <p className='py-5 font-kanit'>Coming soon</p>
+                            <img src={util} alt="util" />
                         </div>
 
-                        <div class="flex flex-col gap-16">
-
-                            <div>
-                                <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 pb-5">
-                                    Coming soon
-                                </h4>
-
-                                <img src={util} alt="util" />
-                            </div>
-
-                            <div>
-                                <img src={coin} alt="coin" />
-                                <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 pb-5">
-                                    Coming soon
-                                </h4>
-
-                                <img src={util} alt="util" />
-                            </div>
-
+                        <div>
+                            <img src={coin} alt="coin" />
+                            <h4 className="font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100">
+                                (xxx) utility
+                            </h4>
+                            <p className='py-5 font-kanit'>Coming soon</p>
+                            <img src={util} alt="util" />
                         </div>
 
                     </div>
@@ -193,11 +174,11 @@ export default function Home() {
                     <div className="lg:flex block items-center justify-between">
 
                         <div>
-                            <img src={rd_top} alt="roadmap" />
-                            <h1 className='font-minecraft uppercase py-5 md:text-5xl text-3xl font-semibold text-white-100 tracking-wide'>roadmap</h1>
+                            <img src={rd_top} alt="roadmap" className='sm:block flex mx-auto sm:w-full w-1/3'/>
+                            <h1 className='font-minecraft uppercase py-5 md:text-5xl text-3xl sm:font-semibold font-medium text-white-100 tracking-wide sm:text-left text-center'>roadmap</h1>
                         </div>
 
-                        <div className='lg:my-0 my-12'>
+                        <div className='lg:my-0 my-12 sm:block hidden'>
                             <img src={monkey} alt="monkey" className='ml-10 bounce-out-down' />
                             <img src={util} alt="roadmap" />
                         </div>
@@ -220,8 +201,9 @@ export default function Home() {
                             </div>
 
                             <ul className='py-5 font-kanit ml-9 list-disc'>
-                                <li>first utility live (@GoldguardBot)</li>
-                                <li>staking release</li>
+                                <li>First utility live</li>
+                                <li>Staking release</li>
+                                <li>NFT marketplace</li>
                                 <li>2000 holders</li>
                             </ul>
                         </div>
@@ -249,12 +231,6 @@ export default function Home() {
                         </div>
 
                     </div>
-
-                    {/* <div className="lg:block hidden">
-                        <svg width="162" height="332" viewBox="0 0 162 332" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M140.489 0.379895L135.38 11.5106L146.511 16.6201L151.62 5.48937L140.489 0.379895ZM0 329L17.1183 331.639L10.8444 315.494L0 329ZM142.094 9.02146C156.257 47.2232 166.382 108.122 151.635 168.22C136.909 228.234 97.3699 287.527 12.0225 322.719L13.1661 325.492C99.45 289.914 139.608 229.822 154.548 168.934C169.468 108.131 159.23 46.6113 144.906 7.97854L142.094 9.02146Z" fill="#00B6E3" />
-                        </svg>
-                    </div> */}
 
                     <div className="lg:flex gap-12 items-center mt-12">
                         <div>
@@ -307,36 +283,32 @@ export default function Home() {
                 <div className="md:px-20 px-5 py-16 container mx-auto">
 
                     <div className="flex gap-4 justify-center items-center">
-                        <h1 className='font-minecraft uppercase pt-5 md:text-5xl text-xl font-semibold text-white-100 tracking-wide'>HOW TO BUY</h1>
+                        <h1 className='font-minecraft uppercase pt-5 md:text-5xl text-3xl font-semibold text-white-100 tracking-wide'>HOW TO BUY</h1>
                         <img src={cart} alt="cart" className='w-20' />
                     </div>
 
-                    <div className="lg:flex block justify-between items-center gap-14 my-16">
+                    <div className="lg:grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-24 lg:py-16 py-6">
 
-                        <div className='flex flex-col gap-14'>
-                            <div className="flex gap-4 justify-center items-center">
-                                <img src={one} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Download Metamask or Trust Wallet & set your bsc wallet</p>
-                            </div>
-
-                            <div className="flex gap-4 justify-center items-center">
-                                <img src={two} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Open PancakeSwap and
-                                    Connect your wallet</p>
-                            </div>
+                        <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
+                            <img src={one} alt="cart" className='w-20' />
+                            <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Download Metamask or Trust Wallet & set your bsc wallet</p>
                         </div>
 
-                        <div className='flex flex-col gap-14'>
-                            <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
-                                <img src={three} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Add $FLANETZ  contract
-                                    Click settings and set “slippage” to 10%</p>
-                            </div>
+                        <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
+                            <img src={two} alt="cart" className='' />
+                            <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Open PancakeSwap and
+                                Connect your wallet</p>
+                        </div>
 
-                            <div className="flex gap-4 justify-center items-center">
-                                <img src={four} alt="cart" className='w-20' />
-                                <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Enter the desired amount and swap</p>
-                            </div>
+                        <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
+                            <img src={three} alt="cart" className='w-20' />
+                            <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Add $FLANETZ  contract
+                                Click settings and set “slippage” to 10%</p>
+                        </div>
+
+                        <div className="flex gap-4 justify-center items-center lg:mt-0 mt-12">
+                            <img src={four} alt="cart" className='' />
+                            <p className='font-minecraft text-xl font-semibold text-white-100 tracking-wide'>Enter the desired amount and swap</p>
                         </div>
 
                     </div>
@@ -348,18 +320,18 @@ export default function Home() {
                     </a>
                     <img src={hand} alt="" className='w-16 flex mx-auto' />
 
-                    <div className="lg:flex block gap-4 justify-between items-center mt-8">
+                    <div className="lg:flex block gap-4 justify-between items-center mt-8 sm:text-left text-center">
                         <div>
                             <h4 className='font-minecraft uppercase pt-5 md:text-3xl text-xl font-semibold text-white-100 tracking-wide'>ArE TOGETHER STRONG</h4>
 
                             <p className='font-minecraft text-lg text-white-100 tracking-wide my-5'>$FLANETZ will change the Binance Smart Chain forever</p>
                         </div>
 
-                        <div>
+                        <a href="https://t.me/flanetz_chat">
                             <button className='bg-blue-100 rounded-xl px-6 py-2 text-xl font-minecraft font-semibold tracking-wide uppercase'>
                                 community
                             </button>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
